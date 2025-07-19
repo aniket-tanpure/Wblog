@@ -1,0 +1,28 @@
+<div class="container py-4">
+  <!-- Add Post Button Right Aligned -->
+  <div class="d-flex justify-content-end mb-3">
+    <a routerLink="/blog/add" class="btn btn-success">
+      + Add New Post
+    </a>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4" *ngFor="let post of tableData">
+      <div class="card h-100 shadow rounded-4 border-0">
+        <img [src]="post.imgUrl" class="card-img-top rounded-top-4" *ngIf="post.imgUrl" alt="Post Image" />
+
+        <div class="card-body">
+          <h5 class="card-title text-primary">{{ post.title }}</h5>
+          <p class="card-text text-muted small">{{ post.description }}</p>
+        </div>
+
+        <!-- Button Group with Spacing -->
+        <div class="card-footer bg-transparent border-0 d-flex gap-2 justify-content-start flex-wrap">
+          <a [routerLink]="['/get-blog', post.id]" class="btn btn-sm btn-outline-primary">Read More</a>
+          <a [routerLink]="['/blog/edit', post.id]" class="btn btn-sm btn-outline-secondary">Edit</a>
+          <button class="btn btn-sm btn-outline-danger" (click)="deletePost(post.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

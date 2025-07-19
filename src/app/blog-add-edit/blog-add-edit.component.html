@@ -1,0 +1,20 @@
+<div class="container py-4">
+  <h3>{{ isEditMode ? 'Edit Blog Post' : 'Add New Blog Post' }}</h3>
+
+  <form [formGroup]="blogForm" (ngSubmit)="onSubmit()" class="mt-3">
+    <div class="mb-3">
+      <label class="form-label">Title</label>
+      <input type="text" class="form-control" formControlName="title">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Description</label>
+      <textarea class="form-control" formControlName="body" rows="2"></textarea>
+    </div>
+
+    
+    <button type="submit" class="btn btn-primary">
+      {{ isEditMode ? 'Update' : 'Create' }}
+    </button>
+  </form>
+</div>
