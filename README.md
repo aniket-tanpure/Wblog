@@ -1,4 +1,4 @@
-# BlogApp
+# Wblog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
@@ -32,4 +32,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![Blog Image](https://github.com/aniket-tanpure/Wblog/blob/master/src/assets/img2.jpeg?raw=true)
 
 ![Blog Image](https://github.com/aniket-tanpure/Wblog/blob/master/src/assets/img3.jpeg?raw=true)
+
+![Blog Image](https://github.com/aniket-tanpure/Wblog/blob/master/src/assets/img4.jpeg?raw=true)
+
+![Blog Image](https://github.com/aniket-tanpure/Wblog/blob/master/src/assets/img5.jpeg?raw=true)
 
